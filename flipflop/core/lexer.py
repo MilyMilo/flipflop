@@ -32,7 +32,7 @@ class Lexer:
             case "→":
                 self.expect_binary_position(word)
                 self.tokens.append(Token(TokenType.IF))
-            case "⇔":
+            case "↔":
                 self.expect_binary_position(word)
                 self.tokens.append(Token(TokenType.EQ))
             case "⊕":

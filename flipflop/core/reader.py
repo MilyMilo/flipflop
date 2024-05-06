@@ -23,7 +23,7 @@ class Reader:
         "and": "∧",
         "or": "∨",
         "if": "→",
-        "eq": "⇔",
+        "eq": "↔",
     }
 
     def __init__(self, code: str):

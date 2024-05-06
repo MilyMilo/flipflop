@@ -13,7 +13,7 @@ class ReaderTestCase(unittest.TestCase):
     def test_replaces_syntax_sugar(self):
         code = "a or b and c nor d xor not e nand f nor g eq h if i"
         reader = Reader(code)
-        self.assertEqual("a ∨ b ∧ c ↓ d ⊕ ~ e ∣ f ↓ g ⇔ h → i", reader.code)
+        self.assertEqual("a ∨ b ∧ c ↓ d ⊕ ~ e ∣ f ↓ g ↔ h → i", reader.code)
 
     def test_removes_leading_and_trailing_whitespace(self):
         code = """

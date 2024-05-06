@@ -7,7 +7,7 @@ class TokenType(Enum):
     AND = "AND"  # conjunction '∧'
     OR = "OR"  # alternative '∨'
     IF = "IF"  # implication '→'
-    EQ = "EQ"  # equivalence '⇔'
+    EQ = "EQ"  # equivalence '↔'
     XOR = "XOR"  # exclusive alternative '⊕'
     NAND = "NAND"  # negated conjunction '∣'
     NOR = "NOR"  # negated alternative '↓'

@@ -14,7 +14,7 @@ FlipFlip supports two types of syntax:
 The math syntax will cast regular characters `|`, `v`, `^` to their mathematical (non-ascii) equivalents `∣`, `∨`, `∧`.
 
 The variables are not limited to single characters, you can use long names if you prefer: `test or tst`, but using 
-number is not supported.
+numbers is not supported.
 
 ### Usage
 #### Library

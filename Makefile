@@ -1,18 +1,18 @@
 lint:
-	black --check .
-	isort --check .
+	ruff format --check .
 	ruff check .
 
 format:
-	black .
-	isort .
-	ruff check --fix .
+	ruff check --select F401 --select TID252 --select I --fix .
+	ruff format .
 
 test:
-	pytest ./tests
+	python -m unittest tests
+
+test-coverage:
+	coverage python -m unittest tests
 
 clean:
 	rm -rf dist/
 	rm -rf .ruff_cache
-	rm -rf .pytest_cache
 	rm -f .coverage

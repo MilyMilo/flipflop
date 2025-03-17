@@ -4,7 +4,6 @@ from flipflop.core import Token, TokenType
 
 
 class TokenTestCase(unittest.TestCase):
-
     def test_tokens_are_not_equal_to_different_objects(self):
         token = Token(type=TokenType.OR)
         obj = type("obj", (object,), {"test": "test"})

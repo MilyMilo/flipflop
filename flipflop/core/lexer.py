@@ -1,7 +1,9 @@
-from .exceptions import (InvalidBinaryTokenPlacement,
-                         InvalidParenthesisTokenPlacement,
-                         InvalidUnaryTokenPlacement,
-                         InvalidVariableTokenPlacement)
+from .exceptions import (
+    InvalidBinaryTokenPlacement,
+    InvalidParenthesisTokenPlacement,
+    InvalidUnaryTokenPlacement,
+    InvalidVariableTokenPlacement,
+)
 from .token import Token, TokenType
 
 

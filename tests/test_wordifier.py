@@ -4,7 +4,6 @@ from flipflop.core import Reader, Wordifier
 
 
 class WordifierTestCase(TestCase):
-
     def test_wordifies_simple_expressions(self):
         code = "p or q"
         words = Wordifier(Reader(code)).wordify()

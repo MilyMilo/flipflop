@@ -4,7 +4,6 @@ from flipflop.core import Node, Token, TokenType
 
 
 class NodeTestCase(unittest.TestCase):
-
     def test_nodes_are_not_equal_to_different_objects(self):
         node = Node(token=Token(type=TokenType.VARIABLE, value="p"))
         obj = type("obj", (object,), {"test": "test"})

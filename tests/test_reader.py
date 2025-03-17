@@ -4,7 +4,6 @@ from flipflop.core import OutOfBoundsError, Reader
 
 
 class ReaderTestCase(unittest.TestCase):
-
     def test_replaces_ambiguous_characters(self):
         code = "(p | q) v (p | q) v (p ^ q)"
         reader = Reader(code)

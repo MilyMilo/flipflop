@@ -5,7 +5,12 @@ from flipflop import flipflop
 
 
 @click.command()
-@click.option("--inline-input", "-i", help="Singular inline expression to execute")
+@click.option(
+    "--inline-input",
+    "-i",
+    required=True,
+    help="Singular inline expression to execute",
+)
 @click.option(
     "--simple",
     "-s",

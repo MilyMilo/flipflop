@@ -111,8 +111,8 @@ python -m flipflop -i "p or q" -t github
 
 ### Testing
 
-Some unit tests have been implemented in the `./tests` directory to make sure I don't fail my course due to some logic 
-error. You can run them by using `make test` or just `pytest ./tests`
+Some unit tests have been implemented in the `./tests`. 
+You can run them by using `make test` or just `python -m unittest discover -s tests`
 
 
 ### OS and Python Version Support

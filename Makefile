@@ -7,10 +7,10 @@ format:
 	ruff format .
 
 test:
-	python -m unittest tests
+	python -m unittest discover -s tests
 
 test-coverage:
-	coverage python -m unittest tests
+	coverage run -m unittest discover -s tests
 
 clean:
 	rm -rf dist/

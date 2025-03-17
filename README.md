@@ -15,7 +15,15 @@ The variables are not limited to single characters, you can use long names if yo
 numbers is not supported.
 
 ### Usage
+
 #### Library
+
+Install as a regular dependency:
+
+```bash
+pip install git+https://github.com/MilyMilo/flipflop.git # with pip
+uv add git+https://github.com/MilyMilo/flipflop.git # with uv
+```
 
 FlipFlop can be used as a library:
 
@@ -40,6 +48,13 @@ Which returns a dictionary with the truth table:
 ```
 
 #### CLI
+
+Install using a global command / tool manager:
+
+```bash
+pipx install git+https://github.com/MilyMilo/flipflop.git && flipflop # with pipx
+uvx --from 'git+https://github.com/MilyMilo/flipflop.git' flipflop # with uvx
+```
 
 FlipFlop exposes a simple CLI:
 

@@ -1,14 +1,15 @@
 import unittest
 
 from flipflop.core import Lexer, Reader, Token, TokenType, Wordifier
-from flipflop.core.exceptions import (InvalidBinaryTokenPlacement,
-                                      InvalidParenthesisTokenPlacement,
-                                      InvalidUnaryTokenPlacement,
-                                      InvalidVariableTokenPlacement)
+from flipflop.core.exceptions import (
+    InvalidBinaryTokenPlacement,
+    InvalidParenthesisTokenPlacement,
+    InvalidUnaryTokenPlacement,
+    InvalidVariableTokenPlacement,
+)
 
 
 class LexerTestCase(unittest.TestCase):
-
     def test_tokenizes_simple_variables(self):
         code = "p or q"
         tokens = Lexer(Wordifier(Reader(code)).wordify()).tokenize()

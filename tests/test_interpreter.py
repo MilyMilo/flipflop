@@ -1,7 +1,15 @@
 import unittest
 
-from flipflop.core import (Interpreter, Lexer, Node, Parser, Reader, Token,
-                           TokenType, Wordifier)
+from flipflop.core import (
+    Interpreter,
+    Lexer,
+    Node,
+    Parser,
+    Reader,
+    Token,
+    TokenType,
+    Wordifier,
+)
 
 
 class InterpreterTestCase(unittest.TestCase):

@@ -1,11 +1,9 @@
 import unittest
 
-from flipflop.core import (Lexer, Node, Parser, Reader, Token, TokenType,
-                           Wordifier)
+from flipflop.core import Lexer, Node, Parser, Reader, Token, TokenType, Wordifier
 
 
 class ParserTestCase(unittest.TestCase):
-
     def _variable_node(self, value: str) -> Node:
         return Node(token=Token(type=TokenType.VARIABLE, value=value))
 

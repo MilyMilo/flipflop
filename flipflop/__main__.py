@@ -1,7 +1,7 @@
 import click
 from tabulate import tabulate
 
-from . import flipflop
+from flipflop import flipflop
 
 
 @click.command()
